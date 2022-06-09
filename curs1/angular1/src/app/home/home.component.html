@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<p>home works!</p>
+<ul>
+    <li>{{user.id}}</li>
+    <li>{{user.nume}}</li>
+    <li>{{user.prenume}}</li>
+</ul>
+<img *ngIf='showImage'[src]="image" [alt]="user.nume">
+<button (click)= 'afImage()'> start</button>
